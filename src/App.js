@@ -40,7 +40,7 @@ const App=() => {
       <section className="h-[50vh] flex flex-col justify-center items-center py-72">
         <img className="w-auto h-[15vh]" src={Title} alt=""/>
         <p className="text-md sm:text-xl text-center font-bold pt-12">Scroll to search for ingredient lists based on any keyword.</p>
-        <p className="font-light">The implemented API is limited to 10 searchs per minute.</p>
+        <p className="text-center font-light">The implemented API is limited to 10 searchs per minute.</p>
       </section>
 
       <form onSubmit={getSearch} className="search-form">
