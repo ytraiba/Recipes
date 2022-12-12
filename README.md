@@ -6,8 +6,8 @@ Enter in any ingredient and this website will return ingredient-lists for recipe
 
 While working on this project I learned how to:
 
-* Create an easily updated portfolio using React components. 
 * Implement animations using exisiting React libraries and scripted CSS. 
+* Use an API to query data. 
 * Create a mobile ready website that scales to any screen size. 
 
 ## Dependencies & Libraries
