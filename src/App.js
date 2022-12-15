@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from "react";
-// import Aos from "aos";
-// import "aos/dist/aos.css";
 import Recipe from "./recipe";
 import './App.css';
-import Title from "./title.png";
+import Title from "./assets/title.png";
 
 const App=() => {
   const APP_ID = "01708403"
@@ -13,16 +11,19 @@ const App=() => {
   const [search, setSearch] = useState('');
   const [query, setQuery] = useState('pasta');
 
+  
+
   useEffect(() => {
+    const getRecipes =  async () => {
+      const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+      const data = await response.json();
+      setRecipes(data.hits);
+      console.log(data.hits);
+    }
     getRecipes();
   } , [query]);
 
-  const getRecipes =  async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
-    const data = await response.json();
-    setRecipes(data.hits);
-    console.log(data.hits);
-  }
+  
 
   const updateSearch = e => {
     setSearch(e.target.value);
