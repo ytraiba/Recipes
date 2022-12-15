@@ -21,4 +21,4 @@ While working on this project I learned how to:
 
 [Click here to use the ingredient list generator](recipe-app-psi-orcin.vercel.app).
 
-<img src="https://github.com/ytraiba/Recipes/blob/master/thumbnail.png" alt="drawing" style="height:275px;"/>
+<img src="https://github.com/ytraiba/Recipes/blob/master/src/assets/thumbnail.png" alt="drawing" style="height:275px;"/>
